@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminFromContext" prefHeight="431.0" prefWidth="789.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blueocean.controller.AdminFromController">
+   <children>
+      <ImageView fitHeight="219.0" fitWidth="337.0" layoutX="25.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img_4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="561.0" layoutY="61.0" text="Admin Login" textFill="#f2e9e9">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="130.0" layoutY="111.0" prefHeight="8.0" prefWidth="584.0" />
+      <Label layoutX="352.0" layoutY="143.0" text="UserName" textFill="#f2e4e4" />
+      <Label layoutX="352.0" layoutY="233.0" text="Password" textFill="#e8dede" />
+      <Button mnemonicParsing="false" onAction="#AdminBackOnAction" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="adminUsername" layoutX="352.0" layoutY="174.0" prefHeight="31.0" prefWidth="384.0" promptText="UserName" />
+      <PasswordField fx:id="admPassword" layoutX="352.0" layoutY="264.0" prefHeight="31.0" prefWidth="384.0" promptText="Password" />
+      <Button fx:id="admLogin" layoutX="679.0" layoutY="343.0" mnemonicParsing="false" onAction="#AdminOnAction" text="Login" textFill="#132cd6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="wrongDetails" layoutX="352.0" layoutY="306.0" prefHeight="21.0" prefWidth="251.0" text="Label" textFill="#b50f0f" />
+   </children>
+</AnchorPane>

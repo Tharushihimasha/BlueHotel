@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blueocean.controller.ReserveFromController">
+   <children>
+      <ImageView fitHeight="484.0" fitWidth="735.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="reserveContext" fitHeight="484.0" fitWidth="735.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img_16.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="42.0" text="Reserve a room" textFill="#dad6d6">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="59.0" layoutY="75.0" prefHeight="13.0" prefWidth="351.0" />
+      <Button layoutX="202.0" layoutY="136.0" mnemonicParsing="false" onAction="#addGuestOnAction" style="-fx-background-color: #2C3A47;" text="Add Guest Details" textFill="#fff4f4">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="313.0" layoutY="227.0" mnemonicParsing="false" onAction="#checkRoomOnAction" style="-fx-background-color: #2C3A47;" text="Check Room" textFill="#f5eded">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="314.0" mnemonicParsing="false" onAction="#selectMealOnAction" style="-fx-background-color: #2C3A47;" text="Select Meal Plan" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+   </children>
+</AnchorPane>

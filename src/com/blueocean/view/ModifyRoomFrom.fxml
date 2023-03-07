@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blueocean.controller.ModifyRoomFromController">
+   <children>
+      <ImageView fx:id="modifyroomContext" fitHeight="495.0" fitWidth="779.0" pickOnBounds="true" style="-fx-blend-mode: #535c68;">
+         <image>
+            <Image url="@../../../img_6.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="321.0" layoutY="8.0" prefHeight="477.0" prefWidth="450.0" style="-fx-background-color: #535c68;">
+         <children>
+            <Label layoutX="276.0" layoutY="32.0" text="Modify Room" textFill="#ebdfdf">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="109.0" layoutY="58.0" prefHeight="3.0" prefWidth="278.0" />
+            <Label layoutX="35.0" layoutY="96.0" text="Room No" textFill="#e8e0e0" />
+            <Label layoutX="36.0" layoutY="161.0" text="Check in date" textFill="#ebe0e0" />
+            <Label layoutX="37.0" layoutY="228.0" text="Check out date" textFill="#e4dcdc" />
+            <Label layoutX="36.0" layoutY="312.0" text="Room Type" textFill="#f2ebeb" />
+            <Label layoutX="233.0" layoutY="312.0" text="Room Capacity" textFill="#f2eaea" />
+            <TextField layoutX="62.0" layoutY="117.0" prefHeight="31.0" prefWidth="150.0" />
+            <TextField layoutX="62.0" layoutY="189.0" />
+            <TextField layoutX="62.0" layoutY="265.0" />
+            <ComboBox fx:id="cmbModifyRoom" layoutX="62.0" layoutY="345.0" prefWidth="150.0" />
+            <ComboBox fx:id="cmbRoomCap" layoutX="276.0" layoutY="345.0" prefWidth="150.0" />
+            <Button layoutX="276.0" layoutY="414.0" mnemonicParsing="false" text="Update">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="372.0" layoutY="414.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
